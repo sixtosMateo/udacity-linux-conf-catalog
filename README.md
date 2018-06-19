@@ -103,7 +103,7 @@ Deploy Catalog using apache
     2. $ sudo pip install Flask
     3. $ sudo pip install httplib2 oauth2client sqlalchemy psycopg2 sqlaclemy_utils requests render_template, redirect, psslib [anything else you have built within this application
 11) Use the nano __init__.py command to change the client_secrets.json line to /var/www/catalog/catalog/client_secrets.json for your CLIENT_ID
-    a. CLIENT_ID = json.loads(open('the path above', 'r').read())['web']['client_id']
+    1. CLIENT_ID = json.loads(open('the path above', 'r').read())['web']['client_id']
 12) Change your host to your Amazon Lightsail public ip address and port to 80
 13) Configure and enable the virtual host
     1. $ sudo nano /etc/apache2/sites-available/catalog.conf
